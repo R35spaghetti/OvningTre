@@ -3,27 +3,49 @@ namespace ÖvningTre.Inkapsling;
 public class Person
 {
     private int age;
-    private string fname;
-    private string lname;
+    private string fName;
+    private string lName;
     private double height;
     private double weight;
-    
+
     public int _age
     {
         get => age;
-        set => age = value;
+        set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("Age is less than 0");
+            }
+        }
     }
 
-    public string _fname
+    public required string _fName
     {
-        get => fname;
-        set => fname = value ?? throw new ArgumentException(nameof(value));
+        get => fName;
+        set
+        {
+            if (value.Length is < 2 or > 10)
+            {
+                throw new ArgumentException("First name must be between 2 and 10 characters long");
+            }
+
+            fName = value;
+        }
     }
 
-    public string _lname
+    public required string _lName
     {
-        get => lname;
-        set => lname = value ?? throw new ArgumentException(nameof(value));
+        get => lName;
+        set
+        {
+            if (value.Length is < 3 or > 15)
+            {
+                throw new ArgumentException("Last name must be between 3 and 15 characters long");
+            }
+
+            fName = value;
+        }
     }
 
     public double _height
@@ -37,6 +59,4 @@ public class Person
         get => weight;
         set => weight = value;
     }
-
-
 }
