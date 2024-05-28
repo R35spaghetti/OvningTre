@@ -44,7 +44,7 @@ public class Person
                 throw new ArgumentException("Last name must be between 3 and 15 characters long");
             }
 
-            fName = value;
+            lName = value;
         }
     }
 
