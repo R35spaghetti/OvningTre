@@ -12,6 +12,6 @@ public class Flamingo : Bird
 
     public Flamingo(string name, double weight, int age, int feathers, bool isPink) : base(name, weight, age, feathers)
     {
-        this._isPink = isPink;
+        _isPink = isPink;
     }
 }

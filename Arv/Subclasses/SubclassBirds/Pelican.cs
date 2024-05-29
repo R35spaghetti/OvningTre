@@ -12,6 +12,6 @@ public class Pelican : Bird
 
     public Pelican(string name, double weight, int age, int feathers, bool openBeak) : base(name, weight, age, feathers)
     {
-        this._openBeak = openBeak;
+        _openBeak = openBeak;
     }
 }

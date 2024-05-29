@@ -12,6 +12,6 @@ public class Swan : Bird
 
     public Swan(string name, double weight, int age, int feathers, bool flying) : base(name, weight, age, feathers)
     {
-        this._flying = flying;
+        _flying = flying;
     }
 }
