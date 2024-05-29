@@ -10,7 +10,7 @@ public class Flamingo : Bird
         set => _isPink = value;
     }
 
-    public Flamingo(string name, double weight, int age, int feathers, bool isPink) : base(name, weight, age, feathers)
+    public Flamingo(string name, double weight, int age, int feathers, int eggs, bool isPink) : base(name, weight, age, feathers, eggs)
     {
         _isPink = isPink;
     }

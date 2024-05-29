@@ -1,8 +1,19 @@
-﻿namespace ÖvningTre.Arv.Subclasses;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ÖvningTre.Arv.Subclasses;
 
 public class Bird : Animal
 {
+    //Om fåglarna behöver ett nytt attribut
+    [Display(Name = "Amount of eggs")] 
+    private int _eggs;
     private int _feathers;
+
+    public int Eggs
+    {
+        get => _eggs;
+        set => _eggs = value;
+    }
 
     public int Feathers
     {
@@ -10,9 +21,10 @@ public class Bird : Animal
         set => _feathers = value;
     }
 
-    public Bird(string name, double weight, int age, int feathers) : base(name, weight, age)
+    public Bird(string name, double weight, int age, int feathers, int eggs) : base(name, weight, age)
     {
         _feathers = feathers;
+        _eggs = eggs;
     }
 
     public override void DoSound()
