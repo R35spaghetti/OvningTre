@@ -17,6 +17,8 @@ public class Person
             {
                 throw new ArgumentException("Age is less than 0");
             }
+
+            age = value;
         }
     }
 
