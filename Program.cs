@@ -46,6 +46,11 @@ foreach (var item in personer)
 List<UserError> listOfErrors = new List<UserError>();
 listOfErrors.Add(new NumericInputError());
 listOfErrors.Add(new TextInputError());
+
+listOfErrors.Add(new DateInputError());
+listOfErrors.Add(new EmailInputError());
+listOfErrors.Add(new SpecialInputError());
+
 foreach (var item in listOfErrors)
 {
     Console.WriteLine(item.UEMessage());
