@@ -2,11 +2,17 @@
 
 public class Bird : Animal
 {
-    private int feathers;
+    private int _feathers;
+
+    public int Feathers
+    {
+        get => _feathers;
+        set => _feathers = value;
+    }
 
     public Bird(string name, double weight, int age, int feathers) : base(name, weight, age)
     {
-        this.feathers = this.feathers;
+        _feathers = feathers;
     }
 
     public override void DoSound()

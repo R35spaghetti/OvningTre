@@ -2,11 +2,17 @@
 
 public class Wolf : Animal
 {
-    private bool canSwim;
-    
+    private bool _canSwim;
+
+    public bool CanSwim
+    {
+        get => _canSwim;
+        set => _canSwim = value;
+    }
+
     public Wolf(string name, double weight, int age, bool canSwim) : base(name, weight, age)
     {
-        this.canSwim = canSwim;
+        _canSwim = canSwim;
     }
 
     public override void DoSound()

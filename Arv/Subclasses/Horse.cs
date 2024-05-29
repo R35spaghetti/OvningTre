@@ -2,11 +2,17 @@
 
 public class Horse : Animal
 {
-    private string race;
-    
+    private string _race;
+
+    public string Race
+    {
+        get => _race;
+        set => _race = value ?? throw new ArgumentNullException(nameof(value));
+    }
+
     public Horse(string name, double weight, int age, string race) : base(name, weight, age)
     {
-        this.race = race;
+        _race = race;
     }
 
     public override void DoSound()
