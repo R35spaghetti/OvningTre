@@ -85,17 +85,17 @@ List<Dog> hundar = new List<Dog>();
 // hundar.Add(new Horse("hästen", 25, 25, "Mustang"));
 
 List<Animal> allAnimals = new List<Animal>(); //För att kunna lagra alla klasser
-//Skapa objekten och lägg dessa i listan, ja värdena kanske är lite för tråkiga.
-allAnimals.Add(new Wolfman("test", 0,0,false));
-allAnimals.Add(new Worm("test", 0,0,false));
-allAnimals.Add(new Wolf("test",0,0,false));
-allAnimals.Add(new Horse("test",0,0,"something"));
-allAnimals.Add(new Hedgehog("test",0,0,true));
-allAnimals.Add(new Dog("test",0,0,true));
-allAnimals.Add(new Bird("test",0,0,2359));
-allAnimals.Add(new Swan("test",0,0,599,true));
-allAnimals.Add(new Pelican("test",0,0,125,true));
-allAnimals.Add(new Flamingo("test",0,0,1,false));
+//Skapa objekten och lägg dessa i listan
+allAnimals.Add(new Wolfman("WOLFMAN", 0,0,false));
+allAnimals.Add(new Worm("WORM", 0,0,false));
+allAnimals.Add(new Wolf("WOLF",0,0,false));
+allAnimals.Add(new Horse("HORSE",0,0,"something"));
+allAnimals.Add(new Hedgehog("HEDGEHOG",0,0,true));
+allAnimals.Add(new Dog("DOG",0,0,true));
+allAnimals.Add(new Bird("BIRD",0,0,2359));
+allAnimals.Add(new Swan("SWAN",0,0,599,true));
+allAnimals.Add(new Pelican("PELICAN",0,0,125,true));
+allAnimals.Add(new Flamingo("FLAMINOG",0,0,1,false));
 //Kalla sedan på dess metod
 foreach (var item in allAnimals) 
 {
