@@ -1,9 +1,7 @@
 ﻿/*C# Övningssamling - Inkapsling, arv och polymorfism*/
-
-using System.ComponentModel;
-using Microsoft.VisualBasic.CompilerServices;
 using ÖvningTre.Arv;
 using ÖvningTre.Arv.Subclasses;
+using ÖvningTre.Arv.Subclasses.SubclassBirds;
 using ÖvningTre.Handlers;
 using ÖvningTre.Inkapsling;
 using ÖvningTre.Interfaces;
@@ -83,3 +81,20 @@ List<Dog> hundar = new List<Dog>();
 //Detta funkar inte då häst är ett annat objekt. Det behöver vara en lista med animals då den är föräldern till dessa objekt
 // hundar.Add(new Horse("hästen", 25, 25, "Mustang"));
 
+List<Animal> allAnimals = new List<Animal>(); //För att kunna lagra alla klasser
+//Skapa objekten och lägg dessa i listan
+allAnimals.Add(new Wolfman("test", 0,0,false));
+allAnimals.Add(new Worm("test", 0,0,false));
+allAnimals.Add(new Wolf("test",0,0,false));
+allAnimals.Add(new Horse("test",0,0,"something"));
+allAnimals.Add(new Hedgehog("test",0,0,true));
+allAnimals.Add(new Dog("test",0,0,true));
+allAnimals.Add(new Bird("test",0,0,2359));
+allAnimals.Add(new Swan("test",0,0,599,true));
+allAnimals.Add(new Pelican("test",0,0,125,true));
+allAnimals.Add(new Flamingo("test",0,0,1,false));
+//Kalla sedan på dess metod
+foreach (var item in allAnimals) 
+{
+    Console.WriteLine(item.Stats());
+}
