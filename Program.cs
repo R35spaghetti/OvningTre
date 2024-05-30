@@ -82,7 +82,7 @@ List<Dog> hundar = new List<Dog>();
 // hundar.Add(new Horse("hästen", 25, 25, "Mustang"));
 
 List<Animal> allAnimals = new List<Animal>(); //För att kunna lagra alla klasser
-//Skapa objekten och lägg dessa i listan
+//Skapa objekten och lägg dessa i listan, ja värdena kanske är lite för tråkiga.
 allAnimals.Add(new Wolfman("test", 0,0,false));
 allAnimals.Add(new Worm("test", 0,0,false));
 allAnimals.Add(new Wolf("test",0,0,false));
