@@ -5,7 +5,16 @@ public abstract class Animal
     private string Name;
     private double Weight;
     private int Age;
-    
+    //Om alla djur behöver den nya egenskapen så läggs den här likt resterande egenskaper
+    // private string Health;
+    //
+    // public string _Health
+    // {
+    //     get => Health;
+    //     set => Health = value ?? throw new ArgumentNullException(nameof(value));
+    // }
+
+
     public string _Name
     {
         get => Name;
@@ -33,5 +42,6 @@ public abstract class Animal
         Name = name;
         Weight = weight;
         Age = age;
+        // Health = health; och sen som parametervärde
     }
 }
