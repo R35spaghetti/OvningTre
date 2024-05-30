@@ -95,7 +95,7 @@ allAnimals.Add(new Dog("DOG",0,0,true));
 allAnimals.Add(new Bird("BIRD",0,0,2359));
 allAnimals.Add(new Swan("SWAN",0,0,599,true));
 allAnimals.Add(new Pelican("PELICAN",0,0,125,true));
-allAnimals.Add(new Flamingo("FLAMINOG",0,0,1,false));
+allAnimals.Add(new Flamingo("FLAMINGO",0,0,1,false));
 //Kalla sedan på dess metod
 foreach (var item in allAnimals) 
 {
