@@ -98,3 +98,11 @@ foreach (var item in allAnimals)
 {
     Console.WriteLine(item.Stats());
 }
+
+Console.WriteLine("---");
+var dogsOnly = allAnimals.OfType<Dog>();
+foreach (var item in dogsOnly)
+{
+    Console.WriteLine(item.Stats());
+
+}
