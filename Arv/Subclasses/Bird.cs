@@ -21,7 +21,7 @@ public class Bird : Animal
         get => _feathers;
         set => _feathers = value;
     }
-    //här läggs eggs
+    //här läggs eggs, ser dylikt ut hos dess barn också
     public Bird(string name, double weight, int age, int feathers) : base(name, weight, age)
     {
         _feathers = feathers;
