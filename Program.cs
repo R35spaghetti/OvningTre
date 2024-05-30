@@ -76,3 +76,10 @@ foreach (var item in djur)
     item.DoSound();
     
 }
+
+
+//En lista för hundar
+List<Dog> hundar = new List<Dog>();
+//Detta funkar inte då häst är ett annat objekt. Det behöver vara en lista med animals då den är föräldern till dessa objekt
+// hundar.Add(new Horse("hästen", 25, 25, "Mustang"));
+
