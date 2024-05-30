@@ -4,17 +4,17 @@ namespace ÖvningTre.Arv.Subclasses;
 
 public class Horse : Animal
 {
-    private string _race;
+    private string _breed;
 
-    public string Race
+    public string Breed
     {
-        get => _race;
-        set => _race = value ?? throw new ArgumentNullException(nameof(value));
+        get => _breed;
+        set => _breed = value ?? throw new ArgumentNullException(nameof(value));
     }
 
-    public Horse(string name, double weight, int age, string race) : base(name, weight, age)
+    public Horse(string name, double weight, int age, string breed) : base(name, weight, age)
     {
-        _race = race;
+        _breed = breed;
     }
     public override string Stats()
     {
