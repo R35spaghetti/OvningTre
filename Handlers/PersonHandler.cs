@@ -39,6 +39,6 @@ public class PersonHandler
 
     public void SetWeight(Person pers, double weight)
     {
-        pers._height = weight;
+        pers._weight = weight;
     }
 }
