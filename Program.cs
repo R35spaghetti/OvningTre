@@ -35,6 +35,16 @@ foreach (var item in personer)
 }
 Console.WriteLine("---");
 
+personHandler.SetAge(subject9, 1);
+personHandler.SetFName(subject9, "AAA");
+personHandler.SetLname(subject9, "BBBB");
+personHandler.SetHeight(subject9, 0);
+personHandler.SetWeight(subject9, 0);
+Console.WriteLine(
+    $"Name: {subject9._fName} {subject9._lName}, Age: {subject9._age}, Height: {subject9._height} cm, Weight: {subject9._weight} kg");
+Console.WriteLine("---");
+
+
 
 // Person person = new Person
 // {
