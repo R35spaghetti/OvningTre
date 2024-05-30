@@ -33,6 +33,7 @@ foreach (var item in personer)
     Console.WriteLine(
         $"Name: {item._fName} {item._lName}, Age: {item._age}, Height: {item._height} cm, Weight: {item._weight} kg");
 }
+Console.WriteLine("---");
 
 
 // Person person = new Person
@@ -58,6 +59,7 @@ foreach (var item in listOfErrors)
 {
     Console.WriteLine(item.UEMessage());
 }
+Console.WriteLine("---");
 
 List<Animal> djur = new List<Animal>();
 djur.Add(new Worm("mask", 25, 25, true));
@@ -74,6 +76,7 @@ foreach (var item in djur)
     item.DoSound();
     
 }
+Console.WriteLine("---");
 
 
 //En lista för hundar
