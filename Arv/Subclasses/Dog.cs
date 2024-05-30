@@ -30,9 +30,13 @@ public class Dog : Animal
 
         return sb.ToString();
     }
-    
     public override void DoSound()
     {
         Console.WriteLine("*barks*");
+    }
+
+    public string DoSomething()
+    {
+        return "En valfri sträng";
     }
 }

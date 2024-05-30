@@ -100,6 +100,11 @@ allAnimals.Add(new Flamingo("test",0,0,1,false));
 foreach (var item in allAnimals) 
 {
     Console.WriteLine(item.Stats());
+    //Då de djuren inte har ärvt denna metod
+    if (item is Dog thatDog)
+    {
+        Console.WriteLine($"\t{thatDog.DoSomething()}");
+    }
 }
 
 Console.WriteLine("---");
@@ -107,5 +112,4 @@ var dogsOnly = allAnimals.OfType<Dog>();
 foreach (var item in dogsOnly)
 {
     Console.WriteLine(item.Stats());
-
 }
