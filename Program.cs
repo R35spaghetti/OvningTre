@@ -1,10 +1,12 @@
 ﻿/*C# Övningssamling - Inkapsling, arv och polymorfism*/
 
 using System.ComponentModel;
+using Microsoft.VisualBasic.CompilerServices;
 using ÖvningTre.Arv;
 using ÖvningTre.Arv.Subclasses;
 using ÖvningTre.Handlers;
 using ÖvningTre.Inkapsling;
+using ÖvningTre.Interfaces;
 using ÖvningTre.Polymorfism;
 
 //Inkapsling-delen
@@ -63,8 +65,13 @@ List<Animal> djur = new List<Animal>();
 djur.Add(new Worm("mask", 25, 25, true));
 djur.Add(new Dog("hund", 10, 7, false));
 djur.Add(new Bird("AAAAAH", 25, 10, 25332));
+djur.Add(new Wolfman("Ett", 125, 50, false));
 foreach (var item in djur)
 {
+    if (item is IPerson person)
+    {
+       person.Talk();
+    }
     Console.Write(item.Stats());
     item.DoSound();
     
