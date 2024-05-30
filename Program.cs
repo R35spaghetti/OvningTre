@@ -1,5 +1,8 @@
 ﻿/*C# Övningssamling - Inkapsling, arv och polymorfism*/
 
+using System.ComponentModel;
+using ÖvningTre.Arv;
+using ÖvningTre.Arv.Subclasses;
 using ÖvningTre.Handlers;
 using ÖvningTre.Inkapsling;
 using ÖvningTre.Polymorfism;
@@ -54,4 +57,14 @@ listOfErrors.Add(new SpecialInputError());
 foreach (var item in listOfErrors)
 {
     Console.WriteLine(item.UEMessage());
+}
+
+List<Animal> djur = new List<Animal>();
+djur.Add(new Worm("mask", 25, 25, true));
+
+foreach (var item in djur)
+{
+    Console.WriteLine(item.Stats());
+    item.DoSound();
+    
 }
