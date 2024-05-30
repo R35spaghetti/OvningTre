@@ -61,10 +61,11 @@ foreach (var item in listOfErrors)
 
 List<Animal> djur = new List<Animal>();
 djur.Add(new Worm("mask", 25, 25, true));
-
+djur.Add(new Dog("hund", 10, 7, false));
+djur.Add(new Bird("AAAAAH", 25, 10, 25332));
 foreach (var item in djur)
 {
-    Console.WriteLine(item.Stats());
+    Console.Write(item.Stats());
     item.DoSound();
     
 }
