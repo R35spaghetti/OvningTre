@@ -47,6 +47,19 @@ public abstract class Animal
         }
 
         return sb.ToString();
+    }   
+    public string StatsAnother()
+    {
+        var properties = GetType().GetProperties();
+        var sb = new StringBuilder();
+
+        foreach (var property in properties)
+        {
+            var value = property.GetValue(this).ToString() ?? "";
+            sb.AppendLine($"{property.Name}: {value}");
+        }
+
+        return sb.ToString();
     }
     public abstract void DoSound();
     

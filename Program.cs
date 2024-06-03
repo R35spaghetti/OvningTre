@@ -113,3 +113,8 @@ foreach (var item in dogsOnly)
 {
     Console.WriteLine(item.Stats());
 }
+
+
+Worm Testar = new Worm("UTAN", 35, 35, true);
+Console.WriteLine("HÄR TESTAS MASKEN");
+Console.WriteLine($"{Testar.StatsAnother()}");
